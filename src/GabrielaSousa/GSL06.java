@@ -5,7 +5,10 @@ import java.util.Scanner;
 public class GSL06 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		System.out.println("********************************************************************************");
+		System.out.println("* Aluno: Gabriela de Sousa Loura - RA 0024145");
+		System.out.println("* Classe GSL 06 - Número múltiplo de 3 e 5");
+		System.out.println("********************************************************************************");
 		 Scanner scanner = new Scanner(System.in);
 
 	        System.out.print("Digite um número inteiro: ");
