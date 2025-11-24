@@ -10,23 +10,29 @@ public class GSL03 {
 		System.out.println("* Aluno: Gabriela de Sousa Loura - RA 0024145");
 		System.out.println("* Classe GSL 03 - Maior de dois números");
 		System.out.println("********************************************************************************");
-		 Scanner scanner = new Scanner(System.in);
-
-	        System.out.print("Digite o primeiro número: ");
-	        double num1 = scanner.nextDouble();
-
-	        System.out.print("Digite o segundo número: ");
-	        double num2 = scanner.nextDouble();
-
-	        if (num1 > num2) {
-	            System.out.println("O maior número é: " + num1);
-	        } else if (num2 > num1) {
-	            System.out.println("O maior número é: " + num2);
-	        } else {
-	            System.out.println("Os dois números são iguais.");
-	        }
-
-	        scanner.close();
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println("Digite um número:");
+		
+		double num1 = entrada.nextDouble();
+		
+		System.out.println("Digite outro número:");
+		
+		double num2 = entrada.nextDouble();
+		
+		if(num1 > num2){
+			System.out.println("O número maior é:"+num1);
+			
+		}else if(num2 > num1){
+			System.out.println("O número maior é:"+num2);
+		}else {
+			System.out.println("Os dois são iguais!");
+		}
+			
+		
+		
+		
 	    }
 	
 	}

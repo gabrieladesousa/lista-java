@@ -5,25 +5,28 @@ import java.util.Scanner;
 public class GSL08 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-Scanner scanner = new Scanner(System.in);
-
-String usuarioCorreto = "admin";
-String senhaCorreta = "1234";
-
-System.out.print("Usuário: ");
-String usuario = scanner.nextLine();
-
-System.out.print("Senha: ");
-String senha = scanner.nextLine();
-
-if (usuario.equals(usuarioCorreto) && senha.equals(senhaCorreta)) {
-    System.out.println("Login bem-sucedido!");
-} else {
-    System.out.println("Usuário ou senha incorretos.");
-}
-
-scanner.close();
+		System.out.println("********************************************************************************");
+		System.out.println("* Aluno: Gabriela de Sousa Loura - RA 0024145");
+		System.out.println("* Classe GSL 08 - Login Simples");
+		System.out.println("********************************************************************************");
+		 
+     Scanner entrada = new Scanner(System.in);
+     
+     
+     System.out.println("Digite seu usuario:");		
+     String Usuario1 = entrada.nextLine();
+     
+     System.out.println("Digite a sua senha:");
+     String Senha1 = entrada.nextLine();
+     
+     String Usuario = "Gabriela";
+     String Senha = "123";
+     
+     if (Usuario1.equals(Usuario) && Senha1.equals(Senha)){
+    	System.out.println("Login realizado com sucesso!!!");
+     }else {
+    	 System.out.println("Usuario ou senha incorreto!");
+     }
 }
 	
 }

@@ -10,26 +10,30 @@ public class GSL05 {
 		System.out.println("* Aluno: Gabriela de Sousa Loura - RA 0024145");
 		System.out.println("* Classe GSL 05 - Notas e aprovação?");
 		System.out.println("********************************************************************************");
-		Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Digite a primeira nota: ");
-        double nota1 = scanner.nextDouble();
-
-        System.out.print("Digite a segunda nota: ");
-        double nota2 = scanner.nextDouble();
-
-        double media = (nota1 + nota2) / 2;
-
-        System.out.println("Média: " + media);
-
-        if (media >= 7) {
-            System.out.println("Aprovado!");
-        } else if (media >= 5) {
-            System.out.println("Recuperação.");
-        } else {
-            System.out.println("Reprovado.");
-        }
-
-        scanner.close();
-    }
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		
+		System.out.println("Digite sua nota:");
+		double nota = entrada.nextDouble();
+		
+		
+		System.out.println("Digite sua segunda nota");
+		double nota1 = entrada.nextDouble();
+		
+		double media = (nota + nota1)/2;
+		
+		System.out.println("Média:"+media);
+		
+		if(media >= 7) {
+			System.out.println("Parabéns você foi aprovada!!!");
+		}else if (media >= 6){
+			System.out.println("Recuperação.");
+		}else
+			System.out.println("Reprovado.");
+	
+		}
 }
+		
+		
+		

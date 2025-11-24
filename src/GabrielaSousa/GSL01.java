@@ -11,20 +11,37 @@ public class GSL01 {
 		System.out.println("********************************************************************************");
 
 		Scanner entrada = new Scanner (System.in);
-		System.out.println("Digite um número:");
-		 
+		
+		System.out.println("Digite um número");
+
+		
 		double numero = entrada.nextDouble();
-		 
-		if (numero > 0){
-			System.out.println("O número é positivo.");
-		}else if(numero < 0 ) {
-			System.out.print("O número é negativo.");
-		 
-		}else {
-			System.out.println("O número é zero.");
-		}
+		
+		if(numero > 0) {
+			System.out.println("O número é positivo");
+			}
+			else if(numero < 0) {
+				System.out.println("O número é negativo");
+			}else {
+				System.out.println("O numero é zero");
+			}
 		entrada.close();
 		
 	}
-
+	
 }
+
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		

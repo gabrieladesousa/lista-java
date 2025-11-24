@@ -10,22 +10,18 @@ public class GSL04 {
 		System.out.println("* Aluno: Gabriela de Sousa Loura - RA 0024145");
 		System.out.println("* Classe GSL 04 -  Pode votar?");
 		System.out.println("********************************************************************************");
-		 Scanner scanner = new Scanner(System.in);
-
-	        System.out.print("Digite sua idade: ");
-	        int idade = scanner.nextInt();
-
-	        if (idade < 16) {
-	            System.out.println("Você ainda não pode votar.");
-	        } else if (idade < 18 || idade > 70) {
-	            System.out.println("Seu voto é opcional.");
-	        } else {
-	            System.out.println("Seu voto é obrigatório.");
-	        }
-
-	        scanner.close();
-	    }
-	
-
-
+		 
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println("Qual sua idade?");
+		
+		double idade = entrada.nextDouble();
+		if (idade > 18) {
+			System.out.println("Você pode votar!!!");
+			
+		}else if(idade < 18){
+			System.out.println("Você ainda não pode votar!!!");
+			
+		}
+	}
 }
